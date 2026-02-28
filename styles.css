@@ -12,15 +12,26 @@
 body {
   margin: 0;
   min-height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #eef2ff, var(--bg));
   color: var(--text);
 }
 
+.site-header {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  text-align: center;
+}
+
+.site-header h2 {
+  margin: 0;
+}
+
 .container {
   width: min(90vw, 560px);
+  margin: auto;
   padding: 2rem;
   text-align: center;
   background: var(--card);
@@ -49,4 +60,15 @@ button {
 
 button:hover {
   opacity: 0.92;
+}
+
+.site-footer {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  color: #4b5563;
+}
+
+.site-footer p {
+  margin: 0;
 }
